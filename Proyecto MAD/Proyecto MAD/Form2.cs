@@ -15,6 +15,15 @@ namespace Proyecto_MAD
 {
     public partial class Form2 : Form
     {
+        public string alumno { get; set; }
+        public string carrera {  get; set; }
+        public string asignatura {  get; set; }
+        public string grupo {  get; set; }
+        public string docente {  get; set; }
+        public string incidencia {  get; set; }
+        public string aula {  get; set; }
+
+
         public Form2()
         {
             InitializeComponent();
@@ -65,6 +74,11 @@ namespace Proyecto_MAD
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

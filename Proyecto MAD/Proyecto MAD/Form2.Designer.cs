@@ -47,6 +47,7 @@
             textBox6 = new TextBox();
             textBox7 = new TextBox();
             label9 = new Label();
+            button4 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -245,12 +246,30 @@
             label9.Text = "Alumno";
             label9.Click += label9_Click;
             // 
+            // button4
+            // 
+            button4.BackColor = SystemColors.HotTrack;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.ForeColor = Color.White;
+            button4.ImageAlign = ContentAlignment.MiddleLeft;
+            button4.Location = new Point(256, 434);
+            button4.Name = "button4";
+            button4.Size = new Size(226, 40);
+            button4.TabIndex = 21;
+            button4.Text = "Actualizar";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
             ClientSize = new Size(1123, 508);
+            Controls.Add(button4);
             Controls.Add(label9);
             Controls.Add(textBox7);
             Controls.Add(textBox6);
@@ -299,5 +318,6 @@
         private TextBox textBox6;
         private TextBox textBox7;
         private Label label9;
+        private Button button4;
     }
 }
