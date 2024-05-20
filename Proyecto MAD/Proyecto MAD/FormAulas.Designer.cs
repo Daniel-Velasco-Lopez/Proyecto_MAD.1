@@ -53,6 +53,7 @@
             label7.Size = new Size(18, 20);
             label7.TabIndex = 29;
             label7.Text = "X";
+            label7.Click += label7_Click;
             // 
             // textBox4
             // 

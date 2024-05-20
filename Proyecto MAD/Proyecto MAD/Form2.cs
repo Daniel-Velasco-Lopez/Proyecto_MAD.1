@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto_MAD;
+using LibreriaMAD;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Proyecto_MAD
 {
@@ -51,6 +53,16 @@ namespace Proyecto_MAD
         }
 
         private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

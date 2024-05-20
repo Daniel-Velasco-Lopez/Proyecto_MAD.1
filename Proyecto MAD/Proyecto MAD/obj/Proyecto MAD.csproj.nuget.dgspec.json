@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\angel\\source\\repos\\Proyecto MAD\\Proyecto MAD\\Proyecto MAD.csproj": {}
+    "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Proyecto MAD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\angel\\source\\repos\\Proyecto MAD\\Proyecto MAD\\Proyecto MAD.csproj": {
+    "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Proyecto MAD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\source\\repos\\Proyecto MAD\\Proyecto MAD\\Proyecto MAD.csproj",
+        "projectUniqueName": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Proyecto MAD.csproj",
         "projectName": "Proyecto MAD",
-        "projectPath": "C:\\Users\\angel\\source\\repos\\Proyecto MAD\\Proyecto MAD\\Proyecto MAD.csproj",
+        "projectPath": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Proyecto MAD.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\source\\repos\\Proyecto MAD\\Proyecto MAD\\obj\\",
+        "outputPath": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

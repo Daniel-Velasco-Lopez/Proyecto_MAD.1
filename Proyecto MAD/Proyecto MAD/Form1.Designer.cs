@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             MenuVertical = new Panel();
+            button2 = new Button();
             button1 = new Button();
             labelLogo = new Label();
             pictureBox1 = new PictureBox();
@@ -56,6 +57,7 @@
             // MenuVertical
             // 
             MenuVertical.BackColor = Color.FromArgb(44, 67, 207);
+            MenuVertical.Controls.Add(button2);
             MenuVertical.Controls.Add(button1);
             MenuVertical.Controls.Add(labelLogo);
             MenuVertical.Controls.Add(pictureBox1);
@@ -64,6 +66,20 @@
             MenuVertical.Name = "MenuVertical";
             MenuVertical.Size = new Size(250, 650);
             MenuVertical.TabIndex = 1;
+            // 
+            // button2
+            // 
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(0, 566);
+            button2.Name = "button2";
+            button2.RightToLeft = RightToLeft.No;
+            button2.Size = new Size(250, 40);
+            button2.TabIndex = 0;
+            button2.Text = "Conectar";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -124,7 +140,7 @@
             iconMinimizar.BackColor = Color.DimGray;
             iconMinimizar.Cursor = Cursors.Hand;
             iconMinimizar.Image = (Image)resources.GetObject("iconMinimizar.Image");
-            iconMinimizar.Location = new Point(970, 12);
+            iconMinimizar.Location = new Point(977, 12);
             iconMinimizar.Name = "iconMinimizar";
             iconMinimizar.Size = new Size(20, 20);
             iconMinimizar.SizeMode = PictureBoxSizeMode.Zoom;
@@ -138,7 +154,7 @@
             iconRestaurar.BackColor = Color.DimGray;
             iconRestaurar.Cursor = Cursors.Hand;
             iconRestaurar.Image = (Image)resources.GetObject("iconRestaurar.Image");
-            iconRestaurar.Location = new Point(996, 12);
+            iconRestaurar.Location = new Point(1003, 12);
             iconRestaurar.Name = "iconRestaurar";
             iconRestaurar.Size = new Size(20, 20);
             iconRestaurar.SizeMode = PictureBoxSizeMode.Zoom;
@@ -153,7 +169,7 @@
             iconMaximizar.BackColor = Color.DimGray;
             iconMaximizar.Cursor = Cursors.Hand;
             iconMaximizar.Image = (Image)resources.GetObject("iconMaximizar.Image");
-            iconMaximizar.Location = new Point(996, 12);
+            iconMaximizar.Location = new Point(1003, 12);
             iconMaximizar.Name = "iconMaximizar";
             iconMaximizar.Size = new Size(20, 20);
             iconMaximizar.SizeMode = PictureBoxSizeMode.Zoom;
@@ -167,7 +183,7 @@
             iconCerrar.BackColor = Color.DimGray;
             iconCerrar.Cursor = Cursors.Hand;
             iconCerrar.Image = (Image)resources.GetObject("iconCerrar.Image");
-            iconCerrar.Location = new Point(1020, 12);
+            iconCerrar.Location = new Point(1027, 12);
             iconCerrar.Name = "iconCerrar";
             iconCerrar.Size = new Size(20, 20);
             iconCerrar.SizeMode = PictureBoxSizeMode.Zoom;
@@ -189,9 +205,8 @@
             // 
             // panelContenedor
             // 
-            panelContenedor.BackColor = Color.WhiteSmoke;
+            panelContenedor.BackColor = Color.White;
             panelContenedor.Controls.Add(pictureBox2);
-            panelContenedor.Dock = DockStyle.Fill;
             panelContenedor.Location = new Point(250, 45);
             panelContenedor.Name = "panelContenedor";
             panelContenedor.Size = new Size(1050, 605);
@@ -247,5 +262,6 @@
         private PictureBox iconMaximizar;
         private PictureBox iconCerrar;
         private PictureBox pictureBox2;
+        private Button button2;
     }
 }

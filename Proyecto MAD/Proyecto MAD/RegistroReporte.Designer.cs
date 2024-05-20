@@ -33,7 +33,10 @@
             label2 = new Label();
             button3 = new Button();
             label1 = new Label();
-            panel1 = new Panel();
+            dataGridView1 = new DataGridView();
+            button5 = new Button();
+            button1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // button4
@@ -45,7 +48,7 @@
             button4.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             button4.ForeColor = Color.White;
             button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(678, 354);
+            button4.Location = new Point(730, 444);
             button4.Name = "button4";
             button4.Size = new Size(178, 40);
             button4.TabIndex = 42;
@@ -64,16 +67,17 @@
             label7.Size = new Size(18, 20);
             label7.TabIndex = 41;
             label7.Text = "X";
+            label7.Click += label7_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(138, 131);
+            label2.Location = new Point(36, 67);
             label2.Name = "label2";
-            label2.Size = new Size(93, 23);
+            label2.Size = new Size(174, 23);
             label2.TabIndex = 35;
-            label2.Text = "Solución:";
+            label2.Text = "Datos Registrados";
             // 
             // button3
             // 
@@ -84,7 +88,7 @@
             button3.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             button3.ForeColor = Color.White;
             button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(461, 354);
+            button3.Location = new Point(546, 445);
             button3.Name = "button3";
             button3.Size = new Size(178, 40);
             button3.TabIndex = 34;
@@ -102,21 +106,51 @@
             label1.TabIndex = 31;
             label1.Text = "Registro de Reporte";
             // 
-            // panel1
+            // dataGridView1
             // 
-            panel1.BackColor = SystemColors.ActiveCaption;
-            panel1.Location = new Point(237, 131);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(288, 137);
-            panel1.TabIndex = 43;
-            panel1.Paint += panel1_Paint;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(12, 93);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.Size = new Size(910, 346);
+            dataGridView1.TabIndex = 44;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // button5
+            // 
+            button5.BackColor = SystemColors.HotTrack;
+            button5.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button5.ForeColor = Color.White;
+            button5.Location = new Point(12, 445);
+            button5.Name = "button5";
+            button5.Size = new Size(189, 40);
+            button5.TabIndex = 45;
+            button5.Text = "Modificar";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.HotTrack;
+            button1.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(223, 444);
+            button1.Name = "button1";
+            button1.Size = new Size(136, 40);
+            button1.TabIndex = 46;
+            button1.Text = "Borrar";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // RegistroReporte
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(934, 496);
-            Controls.Add(panel1);
+            Controls.Add(button1);
+            Controls.Add(button5);
+            Controls.Add(dataGridView1);
             Controls.Add(button4);
             Controls.Add(label7);
             Controls.Add(label2);
@@ -125,6 +159,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "RegistroReporte";
             Text = "RegistroReporte";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -136,6 +171,8 @@
         private Label label2;
         private Button button3;
         private Label label1;
-        private Panel panel1;
+        private DataGridView dataGridView1;
+        private Button button5;
+        private Button button1;
     }
 }

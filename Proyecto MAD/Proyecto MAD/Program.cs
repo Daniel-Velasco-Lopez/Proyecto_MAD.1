@@ -1,3 +1,4 @@
+using LibreriaMAD;
 namespace Proyecto_MAD
 {
     internal static class Program

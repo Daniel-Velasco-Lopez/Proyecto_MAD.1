@@ -1,5 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 using Proyecto_MAD;
+using LibreriaMAD;
 using System.Runtime.InteropServices;
+using MySql.Data.MySqlClient;
+
 
 
 namespace Proyecto_MAD
@@ -77,6 +89,26 @@ namespace Proyecto_MAD
         private void panelContenedor_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string connection = "server=localhost;port =3306;uid=root;pwd=;database=base de datos mad;";
+
+            using (MySqlConnection conect = new MySqlConnection(connection))
+            {
+                try
+                {
+                    conect.Open();
+                    MessageBox.Show("Conexión exitosa a la base de datos!");
+                    conect.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error de conexión de la base de datos: " + ex.Message);
+                }
+
+            }
         }
     }
 }
