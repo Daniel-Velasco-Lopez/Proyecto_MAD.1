@@ -1,4 +1,5 @@
-﻿namespace Proyecto_MAD
+﻿
+namespace Proyecto_MAD
 {
     partial class Registro_Nuevo
     {
@@ -218,8 +219,14 @@
             Controls.Add(label1);
             Name = "Registro_Nuevo";
             Text = "Registro_Nuevo";
+            Load += Registro_Nuevo_Load;
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void Registro_Nuevo_Load(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

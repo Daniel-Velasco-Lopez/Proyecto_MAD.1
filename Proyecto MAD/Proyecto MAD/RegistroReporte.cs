@@ -39,59 +39,9 @@ namespace Proyecto_MAD
 
         private void button5_Click(object sender, EventArgs e)
         {
-            // Supongamos que tienes TextBoxes para ingresar la información del reporte
-            string alumno = txtAlumno.Text;
-            string carrera = txtCarrera.Text;
-            string asignatura = txtAsignatura.Text;
-            string grupo = txtGrupo.Text;
-            string docente = txtDocente.Text;
-            string incidencia = txtIncidencia.Text;
-            string aula = txtAula.Text;
-
-            if (string.IsNullOrEmpty(alumno) || string.IsNullOrEmpty(carrera) || string.IsNullOrEmpty(asignatura) ||
-               string.IsNullOrEmpty(grupo) || string.IsNullOrEmpty(docente) || string.IsNullOrEmpty(incidencia) ||
-               string.IsNullOrEmpty(aula))
-            {
-                MessageBox.Show("Por favor, rellene todos los campos.", "Campos Incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            try
-            {
-                conexion.Open();
-
-                // Inserta la nueva información en la base de datos
-                string query = "INSERT INTO generaciondereporte (Alumno, Carrera, Asignatura, Grupo, Docente, Incidencia, Aula) " +
-                               "VALUES (@Alumno, @Carrera, @Asignatura, @Grupo, @Docente, @Incidencia, @Aula)";
-                MySqlCommand comando = new MySqlCommand(query, conexion);
-                comando.Parameters.AddWithValue("@Alumno", alumno);
-                comando.Parameters.AddWithValue("@Carrera", carrera);
-                comando.Parameters.AddWithValue("@Asignatura", asignatura);
-                comando.Parameters.AddWithValue("@Grupo", grupo);
-                comando.Parameters.AddWithValue("@Docente", docente);
-                comando.Parameters.AddWithValue("@Incidencia", incidencia);
-                comando.Parameters.AddWithValue("@Aula", aula);
-
-                comando.ExecuteNonQuery();
-
-                // Obtener el ID del último registro insertado
-                long idReporte = comando.LastInsertedId;
-
-                MessageBox.Show("Reporte registrado correctamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                // Abre el formulario con la información del reporte recién registrado
-                Form2 form2Form = new Form2();
-                form2Form.Show();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al registrar el reporte: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally
-            {
-                conexion.Close();
-            }
-
+            Registro_Nuevo registro_Nuevo = new Registro_Nuevo();
+            registro_Nuevo.Show();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -41,6 +41,8 @@ namespace Proyecto_MAD
 
         private void button1_Click(object sender, EventArgs e)
         {
+            RegistroReporte registroReporte = new RegistroReporte();
+            registroReporte.Show();
 
             string connectionString = "server=localhost; port =3306;uid=root;pwd=;database='base de datos mad';";
 
@@ -79,8 +81,7 @@ namespace Proyecto_MAD
                     MessageBox.Show("Error de registro de reporte: " + ex.Message);
                 }
             }
-            RegistroReporte registroReporte = new RegistroReporte();
-            registroReporte.Show(registroReporte);
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -116,7 +117,8 @@ namespace Proyecto_MAD
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            Registro_Nuevo registro_Nuevo = new Registro_Nuevo();
+            registro_Nuevo.Show(registro_Nuevo);      
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Proyecto MAD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+738070068a264594d4768ebfc95396027a63ec1d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd424517aef0f8237813ce2d46ec334909e3a188")]
 [assembly: System.Reflection.AssemblyProductAttribute("Proyecto MAD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Proyecto MAD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

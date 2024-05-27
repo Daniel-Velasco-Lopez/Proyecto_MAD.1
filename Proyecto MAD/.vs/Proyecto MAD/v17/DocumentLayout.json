@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|c:\\users\\angel\\documents\\github\\proyecto_mad.1\\proyecto mad\\proyecto mad\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|solutionrelative:proyecto mad\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\proyecto mad\\registro nuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|solutionrelative:proyecto mad\\registro nuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\proyecto mad\\registro nuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|solutionrelative:proyecto mad\\registro nuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\proyecto mad\\registroreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|solutionrelative:proyecto mad\\registroreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\proyecto mad\\registroreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|solutionrelative:proyecto mad\\registroreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|c:\\users\\angel\\documents\\github\\proyecto_mad.1\\proyecto mad\\proyecto mad\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|solutionrelative:proyecto mad\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\proyecto mad\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|c:\\users\\angel\\documents\\github\\proyecto_mad.1\\proyecto mad\\proyecto mad\\registro nuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|solutionrelative:proyecto mad\\registro nuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|c:\\users\\angel\\documents\\github\\proyecto_mad.1\\proyecto mad\\proyecto mad\\registro nuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|solutionrelative:proyecto mad\\registro nuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|c:\\users\\angel\\documents\\github\\proyecto_mad.1\\proyecto mad\\proyecto mad\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|solutionrelative:proyecto mad\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|c:\\users\\angel\\documents\\github\\proyecto_mad.1\\proyecto mad\\proyecto mad\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04088EE5-D115-409B-B65B-9410F4AC52CB}|Proyecto MAD\\Proyecto MAD.csproj|solutionrelative:proyecto mad\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +46,57 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Registro Nuevo.cs",
+              "DocumentMoniker": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Registro Nuevo.cs",
+              "RelativeDocumentMoniker": "Proyecto MAD\\Registro Nuevo.cs",
+              "ToolTip": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Registro Nuevo.cs",
+              "RelativeToolTip": "Proyecto MAD\\Registro Nuevo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T18:23:50.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Registro Nuevo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Registro Nuevo.cs",
+              "RelativeDocumentMoniker": "Proyecto MAD\\Registro Nuevo.cs",
+              "ToolTip": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Registro Nuevo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto MAD\\Registro Nuevo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T18:19:52.152Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Form2.cs",
+              "RelativeDocumentMoniker": "Proyecto MAD\\Form2.cs",
+              "ToolTip": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Form2.cs",
+              "RelativeToolTip": "Proyecto MAD\\Form2.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwCwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T18:18:38.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Form2.cs",
+              "RelativeDocumentMoniker": "Proyecto MAD\\Form2.cs",
+              "ToolTip": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto MAD\\Form2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T18:18:33.618Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Form1.cs",
               "RelativeDocumentMoniker": "Proyecto MAD\\Form1.cs",
@@ -62,81 +104,6 @@
               "RelativeToolTip": "Proyecto MAD\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T17:57:58.539Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Form2.cs",
-              "RelativeDocumentMoniker": "Proyecto MAD\\Form2.cs",
-              "ToolTip": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Form2.cs",
-              "RelativeToolTip": "Proyecto MAD\\Form2.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAAmwFcAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T17:41:44.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Registro Nuevo.cs",
-              "DocumentMoniker": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Registro Nuevo.cs",
-              "RelativeDocumentMoniker": "Proyecto MAD\\Registro Nuevo.cs",
-              "ToolTip": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Registro Nuevo.cs",
-              "RelativeToolTip": "Proyecto MAD\\Registro Nuevo.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCMAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T17:40:17.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Registro Nuevo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Registro Nuevo.cs",
-              "RelativeDocumentMoniker": "Proyecto MAD\\Registro Nuevo.cs",
-              "ToolTip": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Registro Nuevo.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto MAD\\Registro Nuevo.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T17:40:04.814Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegistroReporte.cs",
-              "DocumentMoniker": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\RegistroReporte.cs",
-              "RelativeDocumentMoniker": "Proyecto MAD\\RegistroReporte.cs",
-              "ToolTip": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\RegistroReporte.cs",
-              "RelativeToolTip": "Proyecto MAD\\RegistroReporte.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwCkAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T17:36:08.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RegistroReporte.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\RegistroReporte.cs",
-              "RelativeDocumentMoniker": "Proyecto MAD\\RegistroReporte.cs",
-              "ToolTip": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\RegistroReporte.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto MAD\\RegistroReporte.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T17:36:06.052Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Form2.cs",
-              "RelativeDocumentMoniker": "Proyecto MAD\\Form2.cs",
-              "ToolTip": "C:\\Users\\angel\\Documents\\GitHub\\Proyecto_MAD.1\\Proyecto MAD\\Proyecto MAD\\Form2.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto MAD\\Form2.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T18:34:56.242Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
