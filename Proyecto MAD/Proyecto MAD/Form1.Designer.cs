@@ -63,8 +63,9 @@
             MenuVertical.Controls.Add(pictureBox1);
             MenuVertical.Dock = DockStyle.Left;
             MenuVertical.Location = new Point(0, 0);
+            MenuVertical.Margin = new Padding(4, 4, 4, 4);
             MenuVertical.Name = "MenuVertical";
-            MenuVertical.Size = new Size(250, 650);
+            MenuVertical.Size = new Size(312, 812);
             MenuVertical.TabIndex = 1;
             // 
             // button2
@@ -72,10 +73,11 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(0, 566);
+            button2.Location = new Point(0, 708);
+            button2.Margin = new Padding(4, 4, 4, 4);
             button2.Name = "button2";
             button2.RightToLeft = RightToLeft.No;
-            button2.Size = new Size(250, 40);
+            button2.Size = new Size(312, 50);
             button2.TabIndex = 0;
             button2.Text = "Conectar";
             button2.UseVisualStyleBackColor = true;
@@ -90,9 +92,10 @@
             button1.ForeColor = Color.White;
             button1.Image = (Image)resources.GetObject("button1.Image");
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(0, 88);
+            button1.Location = new Point(0, 110);
+            button1.Margin = new Padding(4, 4, 4, 4);
             button1.Name = "button1";
-            button1.Size = new Size(250, 40);
+            button1.Size = new Size(312, 50);
             button1.TabIndex = 0;
             button1.Text = "Generar Reportes";
             button1.TextAlign = ContentAlignment.MiddleRight;
@@ -103,18 +106,20 @@
             // 
             labelLogo.AutoSize = true;
             labelLogo.BackColor = Color.WhiteSmoke;
-            labelLogo.Location = new Point(78, 25);
+            labelLogo.Location = new Point(98, 31);
+            labelLogo.Margin = new Padding(4, 0, 4, 0);
             labelLogo.Name = "labelLogo";
-            labelLogo.Size = new Size(169, 20);
+            labelLogo.Size = new Size(205, 25);
             labelLogo.TabIndex = 1;
             labelLogo.Text = "TECNOLÓGICO DE TLAX\r\n";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(8, 7);
+            pictureBox1.Location = new Point(10, 9);
+            pictureBox1.Margin = new Padding(4, 4, 4, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(67, 62);
+            pictureBox1.Size = new Size(84, 78);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -128,9 +133,10 @@
             BarraTitulo.Controls.Add(iconCerrar);
             BarraTitulo.Controls.Add(btnMenu);
             BarraTitulo.Dock = DockStyle.Top;
-            BarraTitulo.Location = new Point(250, 0);
+            BarraTitulo.Location = new Point(312, 0);
+            BarraTitulo.Margin = new Padding(4, 4, 4, 4);
             BarraTitulo.Name = "BarraTitulo";
-            BarraTitulo.Size = new Size(1050, 45);
+            BarraTitulo.Size = new Size(1313, 56);
             BarraTitulo.TabIndex = 2;
             BarraTitulo.MouseDown += BarraTitulo_MouseDown_1;
             // 
@@ -140,9 +146,10 @@
             iconMinimizar.BackColor = Color.DimGray;
             iconMinimizar.Cursor = Cursors.Hand;
             iconMinimizar.Image = (Image)resources.GetObject("iconMinimizar.Image");
-            iconMinimizar.Location = new Point(977, 12);
+            iconMinimizar.Location = new Point(1222, 15);
+            iconMinimizar.Margin = new Padding(4, 4, 4, 4);
             iconMinimizar.Name = "iconMinimizar";
-            iconMinimizar.Size = new Size(20, 20);
+            iconMinimizar.Size = new Size(25, 25);
             iconMinimizar.SizeMode = PictureBoxSizeMode.Zoom;
             iconMinimizar.TabIndex = 4;
             iconMinimizar.TabStop = false;
@@ -154,9 +161,10 @@
             iconRestaurar.BackColor = Color.DimGray;
             iconRestaurar.Cursor = Cursors.Hand;
             iconRestaurar.Image = (Image)resources.GetObject("iconRestaurar.Image");
-            iconRestaurar.Location = new Point(1003, 12);
+            iconRestaurar.Location = new Point(1255, 15);
+            iconRestaurar.Margin = new Padding(4, 4, 4, 4);
             iconRestaurar.Name = "iconRestaurar";
-            iconRestaurar.Size = new Size(20, 20);
+            iconRestaurar.Size = new Size(25, 25);
             iconRestaurar.SizeMode = PictureBoxSizeMode.Zoom;
             iconRestaurar.TabIndex = 3;
             iconRestaurar.TabStop = false;
@@ -169,9 +177,10 @@
             iconMaximizar.BackColor = Color.DimGray;
             iconMaximizar.Cursor = Cursors.Hand;
             iconMaximizar.Image = (Image)resources.GetObject("iconMaximizar.Image");
-            iconMaximizar.Location = new Point(1003, 12);
+            iconMaximizar.Location = new Point(1255, 15);
+            iconMaximizar.Margin = new Padding(4, 4, 4, 4);
             iconMaximizar.Name = "iconMaximizar";
-            iconMaximizar.Size = new Size(20, 20);
+            iconMaximizar.Size = new Size(25, 25);
             iconMaximizar.SizeMode = PictureBoxSizeMode.Zoom;
             iconMaximizar.TabIndex = 2;
             iconMaximizar.TabStop = false;
@@ -183,9 +192,10 @@
             iconCerrar.BackColor = Color.DimGray;
             iconCerrar.Cursor = Cursors.Hand;
             iconCerrar.Image = (Image)resources.GetObject("iconCerrar.Image");
-            iconCerrar.Location = new Point(1027, 12);
+            iconCerrar.Location = new Point(1285, 15);
+            iconCerrar.Margin = new Padding(4, 4, 4, 4);
             iconCerrar.Name = "iconCerrar";
-            iconCerrar.Size = new Size(20, 20);
+            iconCerrar.Size = new Size(25, 25);
             iconCerrar.SizeMode = PictureBoxSizeMode.Zoom;
             iconCerrar.TabIndex = 0;
             iconCerrar.TabStop = false;
@@ -195,9 +205,10 @@
             // 
             btnMenu.Cursor = Cursors.Hand;
             btnMenu.Image = (Image)resources.GetObject("btnMenu.Image");
-            btnMenu.Location = new Point(6, 7);
+            btnMenu.Location = new Point(8, 9);
+            btnMenu.Margin = new Padding(4, 4, 4, 4);
             btnMenu.Name = "btnMenu";
-            btnMenu.Size = new Size(35, 35);
+            btnMenu.Size = new Size(44, 44);
             btnMenu.SizeMode = PictureBoxSizeMode.Zoom;
             btnMenu.TabIndex = 1;
             btnMenu.TabStop = false;
@@ -207,32 +218,35 @@
             // 
             panelContenedor.BackColor = Color.White;
             panelContenedor.Controls.Add(pictureBox2);
-            panelContenedor.Location = new Point(250, 45);
+            panelContenedor.Location = new Point(312, 56);
+            panelContenedor.Margin = new Padding(4, 4, 4, 4);
             panelContenedor.Name = "panelContenedor";
-            panelContenedor.Size = new Size(1050, 605);
+            panelContenedor.Size = new Size(1312, 756);
             panelContenedor.TabIndex = 3;
             panelContenedor.Paint += panelContenedor_Paint;
             // 
             // pictureBox2
             // 
-            pictureBox2.BackColor = Color.DarkGray;
+            pictureBox2.BackColor = Color.LightPink;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(272, 108);
+            pictureBox2.Location = new Point(250, 188);
+            pictureBox2.Margin = new Padding(4, 4, 4, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(569, 306);
+            pictureBox2.Size = new Size(711, 382);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1300, 650);
+            ClientSize = new Size(1625, 812);
             Controls.Add(panelContenedor);
             Controls.Add(BarraTitulo);
             Controls.Add(MenuVertical);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 4, 4, 4);
             Name = "Form1";
             Text = "Form1";
             MenuVertical.ResumeLayout(false);
