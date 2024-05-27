@@ -103,6 +103,7 @@
             textBoxNuevaIncidencia.Name = "textBoxNuevaIncidencia";
             textBoxNuevaIncidencia.Size = new Size(283, 27);
             textBoxNuevaIncidencia.TabIndex = 32;
+            textBoxNuevaIncidencia.TextChanged += textBoxNuevaIncidencia_TextChanged;
             // 
             // textBoxNuevoGrupo
             // 

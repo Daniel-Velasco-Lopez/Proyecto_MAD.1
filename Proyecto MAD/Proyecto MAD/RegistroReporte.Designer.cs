@@ -36,6 +36,8 @@
             dataGridView1 = new DataGridView();
             button5 = new Button();
             button1 = new Button();
+            btnBuscar = new Button();
+            txtBuscar = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -122,7 +124,7 @@
             button5.BackColor = SystemColors.HotTrack;
             button5.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(12, 445);
+            button5.Location = new Point(12, 496);
             button5.Name = "button5";
             button5.Size = new Size(189, 40);
             button5.TabIndex = 45;
@@ -135,7 +137,7 @@
             button1.BackColor = SystemColors.HotTrack;
             button1.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(223, 444);
+            button1.Location = new Point(217, 496);
             button1.Name = "button1";
             button1.Size = new Size(136, 40);
             button1.TabIndex = 46;
@@ -143,11 +145,33 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // btnBuscar
+            // 
+            btnBuscar.BackColor = SystemColors.HotTrack;
+            btnBuscar.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnBuscar.ForeColor = Color.White;
+            btnBuscar.Location = new Point(483, 62);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(136, 32);
+            btnBuscar.TabIndex = 47;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = false;
+            btnBuscar.Click += btnBuscar_Click;
+            // 
+            // txtBuscar
+            // 
+            txtBuscar.Location = new Point(625, 67);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.Size = new Size(283, 27);
+            txtBuscar.TabIndex = 48;
+            // 
             // RegistroReporte
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(934, 496);
+            ClientSize = new Size(934, 548);
+            Controls.Add(txtBuscar);
+            Controls.Add(btnBuscar);
             Controls.Add(button1);
             Controls.Add(button5);
             Controls.Add(dataGridView1);
@@ -159,6 +183,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "RegistroReporte";
             Text = "RegistroReporte";
+            Load += RegistroReporte_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -174,5 +199,7 @@
         private DataGridView dataGridView1;
         private Button button5;
         private Button button1;
+        private Button btnBuscar;
+        private TextBox txtBuscar;
     }
 }
