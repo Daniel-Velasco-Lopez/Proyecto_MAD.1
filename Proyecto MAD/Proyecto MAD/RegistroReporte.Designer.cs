@@ -56,7 +56,7 @@
             button4.TabIndex = 42;
             button4.Text = "Volver a Inicio";
             button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            button4.Click += Button4_Click;
             // 
             // label7
             // 
@@ -69,7 +69,7 @@
             label7.Size = new Size(18, 20);
             label7.TabIndex = 41;
             label7.Text = "X";
-            label7.Click += label7_Click;
+            label7.Click += Label7_Click;
             // 
             // label2
             // 
@@ -96,7 +96,7 @@
             button3.TabIndex = 34;
             button3.Text = "Volver al Reporte";
             button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            button3.Click += Button3_Click;
             // 
             // label1
             // 
@@ -117,7 +117,7 @@
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(910, 346);
             dataGridView1.TabIndex = 44;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dataGridView1.CellContentClick += DataGridView1_CellContentClick;
             // 
             // button5
             // 
@@ -130,7 +130,7 @@
             button5.TabIndex = 45;
             button5.Text = "Modificar";
             button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
+            button5.Click += Button5_Click;
             // 
             // button1
             // 
@@ -143,7 +143,7 @@
             button1.TabIndex = 46;
             button1.Text = "Borrar";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            button1.Click += Button1_Click;
             // 
             // btnBuscar
             // 
@@ -156,7 +156,7 @@
             btnBuscar.TabIndex = 47;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = false;
-            btnBuscar.Click += btnBuscar_Click;
+            btnBuscar.Click += BtnBuscar_Click;
             // 
             // txtBuscar
             // 

@@ -29,31 +29,31 @@ namespace Proyecto_MAD
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
-        private void iconCerrar_Click(object sender, EventArgs e)
+        private void IconCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void iconMaximizar_Click(object sender, EventArgs e)
+        private void IconMaximizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
             iconRestaurar.Visible = true;
             iconMaximizar.Visible = false;
         }
 
-        private void iconRestaurar_Click(object sender, EventArgs e)
+        private void IconRestaurar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
             iconRestaurar.Visible = false;
             iconMaximizar.Visible = true;
         }
 
-        private void iconMinimizar_Click(object sender, EventArgs e)
+        private void IconMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnMenu_Click(object sender, EventArgs e)
+        private void BtnMenu_Click(object sender, EventArgs e)
         {
             if (MenuVertical.Width == 250)
             {
@@ -69,11 +69,11 @@ namespace Proyecto_MAD
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void AbrirFormEnPanel(object Formhijo)
+        private void AbrirFormEnPanel(object formHijo)
         {
             if (this.panelContenedor.Controls.Count > 0)
                 this.panelContenedor.Controls.RemoveAt(0);
-            Form2 fh = Formhijo as Form2;
+            Form fh = formHijo as Form;
             fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;
             this.panelContenedor.Controls.Add(fh);
@@ -81,21 +81,21 @@ namespace Proyecto_MAD
             fh.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new Form2());
         }
 
-        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        private void PanelContenedor_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
-            string connection = "server=localhost;port =3306;uid=root;pwd=;database=base de datos mad;";
+            string connectionString = "server=localhost;port =3306;uid=root;pwd=;database=base de datos mad;";
 
-            using (MySqlConnection conect = new MySqlConnection(connection))
+            using (MySqlConnection conect = new MySqlConnection(connectionString))
             {
                 try
                 {

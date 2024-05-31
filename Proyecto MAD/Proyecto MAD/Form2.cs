@@ -16,35 +16,41 @@ namespace Proyecto_MAD
 {
     public partial class Form2 : Form
     {
-        public string alumno {get; set; }
-        public string carrera {get; set; }
-        public string asignatura {get; set; }
-        public string grupo {get; set; }
-        public string docente {get; set; }
-        public string incidencia {get; set; }
-        public string aula {get; set; }
+        public string Alumno { get; set; }
+        public string Carrera { get; set; }
+        public string Asignatura { get; set; }
+        public string Grupo { get; set; }
+        public string Docente { get; set; }
+        public string Incidencia { get; set; }
+        public string Aula { get; set; }
 
         public Form2()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void Label7_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            RegistroReporte registroReporte = new RegistroReporte();
-            registroReporte.Show();
+            //Asigna los valores de los TextBox a las propiedades antes de realizar la insercción en la base de datos.
+            Alumno = textBoxAlumno.Text;
+            Carrera = textBoxCarrera.Text;
+            Asignatura = textBoxAsignatura.Text;
+            Grupo = textBoxGrupo.Text;
+            Docente = textBoxDocente.Text;
+            Incidencia = textBoxIncidencia.Text;
+            Aula = textBoxAula.Text;
 
-            string connectionString = "server=localhost; port =3306;uid=root;pwd=;database='base de datos mad';";
+            string connectionString = "server=localhost; port =3306;uid=root;pwd=;database=base de datos mad;";
 
             using (MySqlConnection conect = new MySqlConnection(connectionString))
 
@@ -54,25 +60,33 @@ namespace Proyecto_MAD
                     conect.Open();
 
 
-                    // Consulta SQL para insertar datos en la tabla 'estudiantes'
-                    string query = "INSERT INTO generaciondereporte (Alumno,Carrera, Asignatura,Grupo,Docente,Incidencia,Aula) VALUES (@Alumno, @Carrera, @Asignatura, @Grupo,@Docente,@Incidencia,@Aula)";
+                    // Consulta SQL para insertar datos en la tabla 'generacíondereporte'
+                    string query = "INSERT INTO generaciondereporte (Alumno,Carrera,Asignatura,Grupo,Docente,Incidencia,Aula) VALUES (@Alumno, @Carrera, @Asignatura, @Grupo,@Docente,@Incidencia,@Aula)";
 
                     // Crear el comando con la consulta SQL y la conexión
                     MySqlCommand comando = new MySqlCommand(query, conect);
 
                     // Asignar valores a los parámetros de la consulta
-                    comando.Parameters.AddWithValue("@Alumno", alumno);
-                    comando.Parameters.AddWithValue("@Carrera", carrera);
-                    comando.Parameters.AddWithValue("@Asignatura", asignatura);
-                    comando.Parameters.AddWithValue("@Grupo", grupo);
-                    comando.Parameters.AddWithValue("@Docente", docente);
-                    comando.Parameters.AddWithValue("@Incidencia", incidencia);
-                    comando.Parameters.AddWithValue("@Aula", aula);
+                    comando.Parameters.AddWithValue("@Alumno", Alumno);
+                    comando.Parameters.AddWithValue("@Carrera", Carrera);
+                    comando.Parameters.AddWithValue("@Asignatura", Asignatura);
+                    comando.Parameters.AddWithValue("@Grupo", Grupo);
+                    comando.Parameters.AddWithValue("@Docente", Docente);
+                    comando.Parameters.AddWithValue("@Incidencia", Incidencia);
+                    comando.Parameters.AddWithValue("@Aula", Aula);
 
                     // Ejecutar la consulta
                     comando.ExecuteNonQuery();
 
                     MessageBox.Show("Datos guardados correctamente !");
+
+                    RegistroReporte registroReporte = Application.OpenForms.OfType<RegistroReporte>().FirstOrDefault();
+                    if (registroReporte != null)
+                    {
+                        registroReporte.CargarDatosReporte();
+                        registroReporte.Show();
+                    }
+
 
                     conect.Close();
                 }
@@ -81,21 +95,21 @@ namespace Proyecto_MAD
                     MessageBox.Show("Error de registro de reporte: " + ex.Message);
                 }
             }
-            
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             FormAulas formularioAulas = new FormAulas();
             formularioAulas.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void Label8_Click(object sender, EventArgs e)
         {
 
         }
@@ -105,50 +119,65 @@ namespace Proyecto_MAD
 
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void Label9_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void TextBox1_TextChanged(object sender, EventArgs e)
         {
             //Aqui se insertan el nombre del alumno
+
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
-            Registro_Nuevo registro_Nuevo = new Registro_Nuevo();
-            registro_Nuevo.Show(registro_Nuevo);      
+            Registro_Nuevo registroNuevo = new Registro_Nuevo();
+            registroNuevo.Show();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void TextBox2_TextChanged(object sender, EventArgs e)
         {
             //Aqui se insertan los datos de la carrera del alumno
+
+
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void TextBox3_TextChanged(object sender, EventArgs e)
         {
             //Aqui se inserta el nombre de la carrera del alumno
+
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
+        private void TextBox4_TextChanged(object sender, EventArgs e)
         {
             //Aqui va el grupo del alumno
+
         }
 
-        private void textBox7_TextChanged(object sender, EventArgs e)
+        private void TextBox7_TextChanged(object sender, EventArgs e)
         {
             //Aqui va el nombre del docente
+
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        private void TextBox5_TextChanged(object sender, EventArgs e)
         {
             //Aqui se describe la incidencia que se presenta 
+
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
+        private void TextBox6_TextChanged(object sender, EventArgs e)
         {
             //Aqui va el nombre del aula en donde se presento la incidencia
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //Aquí debe de abrir el formulario RegistroReporte
+            RegistroReporte registroReporte = new RegistroReporte();
+            registroReporte.Show();
         }
     }
 }

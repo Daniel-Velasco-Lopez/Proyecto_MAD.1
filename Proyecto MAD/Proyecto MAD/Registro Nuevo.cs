@@ -14,24 +14,24 @@ namespace Proyecto_MAD
     public partial class Registro_Nuevo : Form
     {
         private MySqlConnection conexion;
-        private string connectionString = "server=localhost;port=3306;uid=root;pwd=;database='base de datos mad';";
+        private string connectionString = "server=localhost;port=3306;uid=root;pwd=;database=base de datos mad;";
         public Registro_Nuevo()
         {
             InitializeComponent();
             conexion = new MySqlConnection(connectionString);
         }
 
-        private void textBoxNuevoAlumno_TextChanged(object sender, EventArgs e)
+        private void TextBoxNuevoAlumno_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void textBoxNuevaCarrera_TextChanged(object sender, EventArgs e)
+        private void TextBoxNuevaCarrera_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void bttnActualizar_Click(object sender, EventArgs e)
+        private void BttnActualizar_Click(object sender, EventArgs e)
         {
             string nuevoAlumno = textBoxNuevoAlumno.Text;
             string nuevaCarrera = textBoxNuevaCarrera.Text;
@@ -44,7 +44,7 @@ namespace Proyecto_MAD
             try
             {
                 conexion.Open();
-                string queryVerificar= "SELECT COUNT(*)FORM generaciondereporte WHERE Alumno=@alumno";
+                string queryVerificar = "SELECT COUNT(*)FORM generaciondereporte WHERE Alumno=@alumno";
 
                 MySqlCommand comandoVerificar = new MySqlCommand(queryVerificar, conexion);
                 comandoVerificar.Parameters.AddWithValue("@Alumno", nuevoAlumno);
@@ -66,7 +66,7 @@ namespace Proyecto_MAD
                 }
                 else
                 {
-                    
+
                     string queryInsertar = "INSERT INTO generaciondereporte (Alumno,Carrera, Asignatura, Grupo,Docente,Incidencia, Aula) VALUES (@alumno, @carrera, @asignatura, @grupo,@docente,@aula)";
                     MySqlCommand comandoInsertar = new MySqlCommand(queryInsertar, conexion);
                     comandoInsertar.Parameters.AddWithValue("@Alumno", nuevoAlumno);
@@ -96,9 +96,9 @@ namespace Proyecto_MAD
 
         }
 
-        private void textBoxNuevaIncidencia_TextChanged(object sender, EventArgs e)
+        private void TextBoxNuevaIncidencia_TextChanged(object sender, EventArgs e)
         {
 
         }
     }
-} 
+}

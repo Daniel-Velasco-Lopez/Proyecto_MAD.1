@@ -2,6 +2,14 @@
 {
     partial class Form2
     {
+        private System.Windows.Forms.TextBox textBoxAlumno;
+        private System.Windows.Forms.TextBox textBoxCarrera;
+        private System.Windows.Forms.TextBox textBoxAsignatura;
+        private System.Windows.Forms.TextBox textBoxGrupo;
+        private System.Windows.Forms.TextBox textBoxDocente;
+        private System.Windows.Forms.TextBox textBoxIncidencia;
+        private System.Windows.Forms.TextBox textBoxAula;
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -48,6 +56,7 @@
             textBox7 = new TextBox();
             label9 = new Label();
             button4 = new Button();
+            button5 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -69,13 +78,13 @@
             button1.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(12, 433);
+            button1.Location = new Point(12, 373);
             button1.Name = "button1";
             button1.Size = new Size(226, 40);
             button1.TabIndex = 1;
             button1.Text = "Registrar Reporte";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            button1.Click += Button1_Click;
             // 
             // button2
             // 
@@ -92,7 +101,7 @@
             button2.TabIndex = 2;
             button2.Text = "Aulas Disponibles";
             button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            button2.Click += Button2_Click;
             // 
             // button3
             // 
@@ -109,7 +118,7 @@
             button3.TabIndex = 3;
             button3.Text = "Inicio";
             button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            button3.Click += Button3_Click;
             // 
             // label2
             // 
@@ -120,7 +129,7 @@
             label2.Size = new Size(81, 23);
             label2.TabIndex = 4;
             label2.Text = "Carrera";
-            label2.Click += label2_Click;
+            label2.Click += Label2_Click;
             // 
             // label3
             // 
@@ -168,7 +177,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(283, 27);
             textBox1.TabIndex = 9;
-            textBox1.TextChanged += textBox1_TextChanged;
+            textBox1.TextChanged += TextBox1_TextChanged;
             // 
             // textBox2
             // 
@@ -176,7 +185,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(283, 27);
             textBox2.TabIndex = 10;
-            textBox2.TextChanged += textBox2_TextChanged;
+            textBox2.TextChanged += TextBox2_TextChanged;
             // 
             // textBox3
             // 
@@ -184,7 +193,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(283, 27);
             textBox3.TabIndex = 11;
-            textBox3.TextChanged += textBox3_TextChanged;
+            textBox3.TextChanged += TextBox3_TextChanged;
             // 
             // textBox4
             // 
@@ -192,7 +201,7 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(283, 27);
             textBox4.TabIndex = 12;
-            textBox4.TextChanged += textBox4_TextChanged;
+            textBox4.TextChanged += TextBox4_TextChanged;
             // 
             // textBox5
             // 
@@ -200,7 +209,7 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(283, 27);
             textBox5.TabIndex = 13;
-            textBox5.TextChanged += textBox5_TextChanged;
+            textBox5.TextChanged += TextBox5_TextChanged;
             // 
             // label7
             // 
@@ -213,7 +222,7 @@
             label7.Size = new Size(18, 20);
             label7.TabIndex = 14;
             label7.Text = "X";
-            label7.Click += label7_Click;
+            label7.Click += Label7_Click;
             // 
             // label8
             // 
@@ -231,7 +240,7 @@
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(283, 27);
             textBox6.TabIndex = 18;
-            textBox6.TextChanged += textBox6_TextChanged;
+            textBox6.TextChanged += TextBox6_TextChanged;
             // 
             // textBox7
             // 
@@ -239,7 +248,7 @@
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(283, 27);
             textBox7.TabIndex = 19;
-            textBox7.TextChanged += textBox7_TextChanged;
+            textBox7.TextChanged += TextBox7_TextChanged;
             // 
             // label9
             // 
@@ -250,7 +259,7 @@
             label9.Size = new Size(81, 23);
             label9.TabIndex = 20;
             label9.Text = "Alumno";
-            label9.Click += label9_Click;
+            label9.Click += Label9_Click;
             // 
             // button4
             // 
@@ -267,7 +276,20 @@
             button4.TabIndex = 21;
             button4.Text = "Actualizar";
             button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            button4.Click += Button4_Click;
+            // 
+            // button5
+            // 
+            button5.BackColor = SystemColors.HotTrack;
+            button5.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button5.ForeColor = Color.White;
+            button5.Location = new Point(12, 434);
+            button5.Name = "button5";
+            button5.Size = new Size(226, 40);
+            button5.TabIndex = 22;
+            button5.Text = "Visualizar Reporte";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // Form2
             // 
@@ -275,6 +297,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
             ClientSize = new Size(1123, 508);
+            Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(label9);
             Controls.Add(textBox7);
@@ -325,5 +348,6 @@
         private TextBox textBox7;
         private Label label9;
         private Button button4;
+        private Button button5;
     }
 }

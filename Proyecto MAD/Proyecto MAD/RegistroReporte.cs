@@ -15,36 +15,36 @@ namespace Proyecto_MAD
     public partial class RegistroReporte : Form
     {
         private MySqlConnection conexion;
-        private string connectionString = "server=localhost;port=3306;uid=root;pwd=;database='base de datos mad';";
+        private string connectionString = "server=localhost;port=3306;uid=root;pwd=;database=base de datos mad;";
         public RegistroReporte()
         {
             InitializeComponent();
             conexion = new MySqlConnection(connectionString);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void Label7_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Button5_Click(object sender, EventArgs e)
         {
             Registro_Nuevo registro_Nuevo = new Registro_Nuevo();
             registro_Nuevo.Show();
-           
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
 
             // Obtener el ID del estudiante seleccionado
@@ -59,24 +59,24 @@ namespace Proyecto_MAD
                     MySqlConnection conexion = new MySqlConnection(connectionString);
                     try
                     {
-                        
+
                         conexion.Open();
 
-                        
+
                         string query = "DELETE FROM generaciondereporte  WHERE id = @id";
                         MySqlCommand comando = new MySqlCommand(query, conexion);
                         comando.Parameters.AddWithValue("@id", idSeleccionado);
 
-                       
+
                         int filasAfectadas = comando.ExecuteNonQuery();
 
-                        
+
                         if (filasAfectadas > 0)
                         {
-                            
+
                             MessageBox.Show("Reporte eliminado correctamente.", "Eliminación Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                            
+
                             CargarDatosReporte();
                         }
                         else
@@ -116,12 +116,12 @@ namespace Proyecto_MAD
         }
 
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            //Aquí se visualizan los datos registrados
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
+        private void BtnBuscar_Click(object sender, EventArgs e)
         {
             string filtro = txtBuscar.Text.Trim();
             if (!string.IsNullOrEmpty(filtro))
@@ -170,31 +170,31 @@ namespace Proyecto_MAD
                 return -1;
             }
         }
-         private void CargarDatosReporte()
-         {
-                try
+        public void CargarDatosReporte()
+        {
+            try
+            {
+                if (conexion.State != ConnectionState.Open)
                 {
-                    if (conexion.State != ConnectionState.Open)
-                    {
-                        conexion.Open();
-                    }
+                    conexion.Open();
+                }
 
-                    string query = "SELECT id, Alumno,Carrera,Asignatura,Grupo,Docente,Incidencia,Aula FROM generaciondereporte";
-                    MySqlCommand comando = new MySqlCommand(query, conexion);
-                    MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
-                    DataTable tablageneraciondereporte= new DataTable();
-                    adaptador.Fill(tablageneraciondereporte);
-                    dataGridView1.DataSource = tablageneraciondereporte;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al cargar los datos del reporte : " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                finally
-                {
-                    conexion.Close();
-                }
-         }
+                string query = "SELECT Alumno,Carrera,Asignatura,Grupo,Docente,Incidencia,Aula FROM generaciondereporte";
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
+                DataTable generaciondereporte = new DataTable();
+                adaptador.Fill(generaciondereporte);
+                dataGridView1.DataSource = generaciondereporte;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los datos del reporte : " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conexion.Close();
+            }
+        }
 
     }
 }

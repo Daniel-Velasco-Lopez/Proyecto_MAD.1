@@ -62,7 +62,7 @@ namespace Proyecto_MAD
             bttnActualizar.TabIndex = 37;
             bttnActualizar.Text = "Actualizar";
             bttnActualizar.UseVisualStyleBackColor = false;
-            bttnActualizar.Click += bttnActualizar_Click;
+            bttnActualizar.Click += BttnActualizar_Click;
             // 
             // label9
             // 
@@ -104,7 +104,7 @@ namespace Proyecto_MAD
             textBoxNuevaIncidencia.Name = "textBoxNuevaIncidencia";
             textBoxNuevaIncidencia.Size = new Size(283, 27);
             textBoxNuevaIncidencia.TabIndex = 32;
-            textBoxNuevaIncidencia.TextChanged += textBoxNuevaIncidencia_TextChanged;
+            textBoxNuevaIncidencia.TextChanged += TextBoxNuevaIncidencia_TextChanged;
             // 
             // textBoxNuevoGrupo
             // 
@@ -126,7 +126,7 @@ namespace Proyecto_MAD
             textBoxNuevaCarrera.Name = "textBoxNuevaCarrera";
             textBoxNuevaCarrera.Size = new Size(283, 27);
             textBoxNuevaCarrera.TabIndex = 29;
-            textBoxNuevaCarrera.TextChanged += textBoxNuevaCarrera_TextChanged;
+            textBoxNuevaCarrera.TextChanged += TextBoxNuevaCarrera_TextChanged;
             // 
             // textBoxNuevoAlumno
             // 
@@ -134,7 +134,7 @@ namespace Proyecto_MAD
             textBoxNuevoAlumno.Name = "textBoxNuevoAlumno";
             textBoxNuevoAlumno.Size = new Size(283, 27);
             textBoxNuevoAlumno.TabIndex = 28;
-            textBoxNuevoAlumno.TextChanged += textBoxNuevoAlumno_TextChanged;
+            textBoxNuevoAlumno.TextChanged += TextBoxNuevoAlumno_TextChanged;
             // 
             // label6
             // 

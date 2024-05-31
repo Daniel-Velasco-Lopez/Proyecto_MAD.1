@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Surtface 10\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Surtface 10\\.nuget\\packages"
+      "C:\\Users\\angel\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\angel\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

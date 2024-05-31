@@ -81,7 +81,7 @@
             button2.TabIndex = 0;
             button2.Text = "Conectar";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button2.Click += Button2_Click;
             // 
             // button1
             // 
@@ -100,7 +100,7 @@
             button1.Text = "Generar Reportes";
             button1.TextAlign = ContentAlignment.MiddleRight;
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Click += Button1_Click;
             // 
             // labelLogo
             // 
@@ -153,7 +153,7 @@
             iconMinimizar.SizeMode = PictureBoxSizeMode.Zoom;
             iconMinimizar.TabIndex = 4;
             iconMinimizar.TabStop = false;
-            iconMinimizar.Click += iconMinimizar_Click;
+            iconMinimizar.Click += IconMinimizar_Click;
             // 
             // iconRestaurar
             // 
@@ -169,7 +169,7 @@
             iconRestaurar.TabIndex = 3;
             iconRestaurar.TabStop = false;
             iconRestaurar.Visible = false;
-            iconRestaurar.Click += iconRestaurar_Click;
+            iconRestaurar.Click += IconRestaurar_Click;
             // 
             // iconMaximizar
             // 
@@ -184,7 +184,7 @@
             iconMaximizar.SizeMode = PictureBoxSizeMode.Zoom;
             iconMaximizar.TabIndex = 2;
             iconMaximizar.TabStop = false;
-            iconMaximizar.Click += iconMaximizar_Click;
+            iconMaximizar.Click += IconMaximizar_Click;
             // 
             // iconCerrar
             // 
@@ -199,7 +199,7 @@
             iconCerrar.SizeMode = PictureBoxSizeMode.Zoom;
             iconCerrar.TabIndex = 0;
             iconCerrar.TabStop = false;
-            iconCerrar.Click += iconCerrar_Click;
+            iconCerrar.Click += IconCerrar_Click;
             // 
             // btnMenu
             // 
@@ -212,7 +212,7 @@
             btnMenu.SizeMode = PictureBoxSizeMode.Zoom;
             btnMenu.TabIndex = 1;
             btnMenu.TabStop = false;
-            btnMenu.Click += btnMenu_Click;
+            btnMenu.Click += BtnMenu_Click;
             // 
             // panelContenedor
             // 
@@ -223,7 +223,7 @@
             panelContenedor.Name = "panelContenedor";
             panelContenedor.Size = new Size(1312, 756);
             panelContenedor.TabIndex = 3;
-            panelContenedor.Paint += panelContenedor_Paint;
+            panelContenedor.Paint +=PanelContenedor_Paint;
             // 
             // pictureBox2
             // 
